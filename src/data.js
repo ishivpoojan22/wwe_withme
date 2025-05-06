@@ -49,14 +49,14 @@ const data = [
 		price: "$17 million",
 	},
     {
-		id: 7,
+		id: 8,
 		name: "Goldberg",
 		info: "Goldberg is a WWE and WCW legend known for his explosive style and dominant 'undefeated streak' in WCW. A multi-time world champion, his power-based wrestling and iconic spear finisher made him a fan favorite. Goldberg is also remembered for his short, intense matches and his global impact on wrestling.",
 		image: "https://i.pinimg.com/474x/10/7a/0e/107a0e87178653f21407ee9a9963b92d.jpg",
 		price: " $16 million",
 	},
     {
-		id: 7,
+		id: 9,
 		name: "Khali",
 		info: "The Great Khali is a WWE legend known for his towering 7'1 frame and immense strength. As the World Heavyweight Champion, he became a dominant force in the ring. Khali's size and power made him a unique presence in WWE, where he was a memorable figure in the mid-2000s.",
 		image: "https://i.pinimg.com/474x/f6/33/e2/f633e263a43011359147b782133b99fd.jpg",
