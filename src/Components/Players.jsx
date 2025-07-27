@@ -10,13 +10,13 @@ const Players = (props) => {
     return (
         <div className='container'>
             <div>
-                <h2 className="title">About WWE Superstar</h2>
+                <h1 className="title">🏆 WWE SUPERSTARS SHOWCASE</h1>
             </div>
 
             <div className="cardsContainer">
                 {
-                    props.players.map((player) => {
-                        return <Card player={player} getRemoveId = {getId}/>
+                    props.players.map((player, index) => {
+                        return <Card key={player.id} player={player} getRemoveId={getId}/>
                     })
                 }
             </div>

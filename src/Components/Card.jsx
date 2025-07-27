@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 const Card = (props) => {
     const [readmore, setReadmore] = useState(false)
 
-    let description = readmore ? props.player.info : `${props.player.info.substring(0, 200)}....`;
+    let description = readmore ? props.player.info : `${props.player.info.substring(0, 150)}...`;
+    
     return (
         <div className="card">
             <img className='playerImage' src={props.player.image} alt="playerImage" />
@@ -15,11 +16,13 @@ const Card = (props) => {
                 <div className="description">
                     {description}
                     <span className='readMore' onClick={() => { setReadmore(!readmore) }}>
-                        {readmore ? " Show Less" : " Read More"}
+                        {readmore ? " ← Show Less" : " Read More →"}
                     </span>
                 </div>
             </div>
-            <button className='notIntrestedBtn' onClick={() => props.getRemoveId(props.player.id)}>Not Intrested</button>
+            <button className='notIntrestedBtn' onClick={() => props.getRemoveId(props.player.id)}>
+                🚫 Not Interested
+            </button>
         </div>
     )
 }
